@@ -2,6 +2,7 @@
 layout: post
 title:  "Where Liberalism and Conservatism Meet the Bible"
 date:   2017-02-01 15:51:54 -0500
+type: post
 categories: faith
 tags: [faith, politics]
 reading_time: 3
