@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% if post.type == "micro-post" && post.tags[0] == "project365" %}
+        {% include preview-types/preview-{{post.type}}.html %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+</div>

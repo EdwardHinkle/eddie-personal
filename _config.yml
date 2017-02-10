@@ -20,5 +20,8 @@ permalink: /:year/:month/:day/:title.html
 remoteUrl: http://eddiehinkle.com
 localUrl: http://eddiehinkle.com
 
+source: _source
+destination: _build
+
 # Build settings
 markdown: kramdown
