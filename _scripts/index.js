@@ -9,7 +9,7 @@ gr.getSingleShelf({
     per_page: 100
 }, function(currentlyReading){
     var json = JSON.stringify(currentlyReading.GoodreadsResponse.books[0].book);
-    fs.writeFile('../_source/_data/currently-reading.json', json, 'utf8', function(){
+    fs.writeFile('../_source/_data/currently_reading.json', json, 'utf8', function(){
         console.log("Done");
     });
 });
