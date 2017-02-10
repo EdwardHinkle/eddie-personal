@@ -13,3 +13,11 @@ gr.getSingleShelf({
         console.log("Done");
     });
 });
+
+// Get Book Status
+
+// Query this url
+//https://www.goodreads.com/user/show/(USERID).xml?key=(KEY)
+// parse <user>
+// parse <user_statuses>
+// parse <user_status> each of these status are the current progress of the current book. 
