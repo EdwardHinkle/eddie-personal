@@ -25,3 +25,8 @@ destination: _build
 
 # Build settings
 markdown: kramdown
+
+# collections:
+#   bookreview:
+#     output: true
+#     permalink: /bookreview/:path/:title/
