@@ -1,0 +1,5 @@
+#!/bin/bash
+
+node ./_scripts/index.js
+jekyll build
+rsync -avz -e ssh ./_build/ eddiehinkle@eddiehinkle.com:~/webapps/eddiehinkle/
