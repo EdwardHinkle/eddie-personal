@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    border-top: 5px solid $primary-color;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -172,6 +172,12 @@
     background: #e2e1e0;
 }
 
+.post-page, .book-page {
+    .page-content {
+        background: #f6f6f6;
+    }
+}
+
 .page-heading {
     font-size: 20px;
 }
@@ -215,7 +221,7 @@
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+    // margin-bottom: $spacing-unit;
 
     h2 {
         font-size: 32px;
@@ -387,4 +393,33 @@
 
 iframe {
     display: block;
+}
+
+blockquote {
+    color: $primary-color;
+    border-left: none;
+    padding-left: 0;
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-style: italic;
+    margin-left: -40px;
+    margin-right: -40px;
+    text-align: justify;
+    font-weight: bold;
+
+    p:first-of-type {
+        text-align: inherit !important;
+    }
+
+    p:last-of-type {
+        text-align: right;
+    }
+
+    a {
+        color: darken($primary-color, 10%) !important;
+    }
+}
+
+.book-post-link {
+    margin-top: 40px;
 }
