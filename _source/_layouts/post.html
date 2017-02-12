@@ -11,7 +11,8 @@ layout: default
           {% for tag in page.tags %}
             <span class="post-tag">{{ tag }}</span>
           {% endfor %}
-        </span></p>
+        </span>
+        <span class="fb-like" data-href="{{ page.url | prepend: site.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -19,3 +20,4 @@ layout: default
   </div>
 
 </article>
+<div class="fb-like" data-href="{{ page.url | prepend: site.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>

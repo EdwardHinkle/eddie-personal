@@ -11,7 +11,7 @@ layout: default
           {% for tag in page.tags %}
             <span class="post-tag">{{ tag }}</span>
           {% endfor %}
-        </span></p>
+        </span> <span class="fb-like" data-href="{{ page.url | prepend: site.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -19,8 +19,7 @@ layout: default
   </div>
 
 </article>
-
-<div style="text-align: center">
+<div style="text-align: center" class="book-post-link">
 <a target="_blank"  href="https://www.amazon.com/gp/product/{{page.isbn}}/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN={{page.isbn}}&linkCode=as2&tag=eddiehinkle-20&linkId=548bcfcd387054abd34130716cb12cd9"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN={{page.isbn}}&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL200_&tag=eddiehinkle-20"></a>
 <h2>Buy this book on <a target="_blank"  href="https://www.amazon.com/gp/product/{{page.isbn}}/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN={{page.isbn}}&linkCode=as2&tag=eddiehinkle-20&linkId=548bcfcd387054abd34130716cb12cd9">Amazon</a></h2>
 </div>
