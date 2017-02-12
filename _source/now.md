@@ -9,7 +9,6 @@ Curious about what I'm up to and what I'm currently focusing on?  That's what th
 
 - Just moved to Frederick, MD this year.
 - Currently working at [Maestro](https://meetmaestro.com).
-- Currently serving as a Church Planting Resident with [Redeemer City Church](http://redeemerdc.org) and [NAMB](https://www.namb.net).
 
 - Working on understanding how to really [Cherish]({% post_url book-reviews/2017-02-10-cherish %}) my Wife, [Ashley](http://ashleyhinkle.com).
 - Chronicling this year of my life daily through my [Project365 Photos](/project365).
