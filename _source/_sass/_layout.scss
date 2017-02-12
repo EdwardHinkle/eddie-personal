@@ -299,7 +299,7 @@
 .type-book {
     background: #fff;
     padding: 28px;
-    padding-left: 155px;
+    padding-left: 215px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     position: relative;
     
@@ -308,6 +308,33 @@
         left: 0;
         top: 0;
         bottom: 0;
+        display: block;
+
+        img {
+            height: 100%;
+            max-width: 200px;
+        }
+    }
+
+    @media screen and (max-width: 718px) {
+        padding-left: 28px;
+        padding-top: 0;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .book {
+            position: initial;
+            text-align: center;
+            margin-bottom: 14px;
+
+            img {
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
     }
 }
 

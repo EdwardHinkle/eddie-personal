@@ -7,6 +7,7 @@ categories: books
 tags: [book]
 reading_time: 2
 isbn: "1607747308"
+permalink: /bookreview/:title/
 ---
 Okay, I will admit, this is a strange book to read. This is a strange book for _me to read_. When I told my wife I was reading this book she looked at me with a facial expression that could probably be summarized as "Why in the world are you reading **that**?". But trust me, if you ever feel frustrated that your office or bedroom isn't ever organized and you're constantly trying to shift things around to get them out of your way, this is the book for you.
 
