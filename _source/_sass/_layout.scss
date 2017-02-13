@@ -423,3 +423,11 @@ blockquote {
 .book-post-link {
     margin-top: 40px;
 }
+
+a, a:visited {
+    color: $primary-color;
+
+    &:active, &:hover {
+        color: darken($primary-color, 15%);
+    }
+}
