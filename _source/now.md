@@ -3,6 +3,7 @@ layout: now
 title: /now
 permalink: /now/
 excerpt: Curious about what I'm up to and what I'm currently focusing on?  That's what this page is all about. Current as of February 2017.
+root_page: true
 ---
 
 Curious about what I'm up to and what I'm currently focusing on?  That's what this page is all about.
