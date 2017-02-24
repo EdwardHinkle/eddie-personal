@@ -3,6 +3,7 @@ layout: page
 title: /using
 permalink: /using/
 excerpt: this page exists to explain the tools that I use for personal and professional everyday use. Current as of February 2017.
+root_page: true
 ---
 
 ### Personal Life

@@ -1,8 +1,9 @@
 ---
 layout: page
-title: About
+title: /about
 permalink: /about/
 excerpt: Follower of Jesus. @Ashley_B_Hinkle’s Husband. Avid Reader. Aspiring Writer. Tech Aficionado. Thoughts are my own.
+root_page: true
 ---
 
 Not much here. Come back soon for more information about me. Until then, here's my Twitter bio.
