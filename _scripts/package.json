@@ -10,6 +10,7 @@
   "author": "Edward Hinkle <hello@eddiehinkle.com>",
   "license": "ISC",
   "dependencies": {
-    "goodreads": "^0.1.0"
+    "goodreads": "^0.1.0",
+    "lodash": "^4.17.4"
   }
 }
