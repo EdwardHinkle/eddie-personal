@@ -43,8 +43,8 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 * This site is a standard jekyll site.
 	* Currently my site contains the following post types: article, book review, photo, video.
 	* All of these are actually just posts with different YAML front-matter. This is bad and they need to be changed into collections. Also video is currently just a link to YouTube. #IndieWebFail. That needs to be fixed.
-* node.js scripts run in the background to [[PESOS]] Goodreads content to my /data directory and periodically rebuilds my Jekyll site with fresh data.
-* The goal is to always have a static site as much as possible, with node.js micro services that update my static files as need be. Eventually, if needed, having [[node.js]] store data in a database and then whenever data is updated, re-publish static files. I would like to stick with jekyll as long as possible, but if that ever gets to the point that it is too complicated, the goal is to build a node.js module that exports HTML through a template language like Jade.
+* node.js scripts run in the background to PESOS Goodreads content to my /data directory and periodically rebuilds my Jekyll site with fresh data.
+* The goal is to always have a static site as much as possible, with node.js micro services that update my static files as need be. Eventually, if needed, having node.js store data in a database and then whenever data is updated, re-publish static files. I would like to stick with jekyll as long as possible, but if that ever gets to the point that it is too complicated, the goal is to build a node.js module that exports HTML through a template language like Jade.
 
 _Last Updated March 2017_
 
