@@ -5,6 +5,7 @@ permalink: /indigenous/
 syndication:
  - name: IndieWeb
    url: https://indieweb.org/indigenous
+excerpt: Indigenous is a simple share extension for iOS and macOS for posting your website using Micropub.
 ---
 **Indigenous** is a simple share extension for iOS and macOS for posting your website using [Micropub](https://indieweb.org/micropub).
 
