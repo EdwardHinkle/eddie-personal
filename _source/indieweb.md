@@ -6,7 +6,7 @@ permalink: /indieweb/
 Here's a look at how my website complies with IndieWeb standards and what my plans and ideas are for the future of my site and for the IndieWeb.
 
 ## Projects
-* indigenous (Under Development) - A iOS and macOS share extension that sends data to a [Micropub](https://indieweb.org/micropub) endpoint. You will download the app, login with IndieAuth, then you can send micropub to your site by using the iOS or macOS share sheet.
+* Indigenous (Under Development) - A iOS and macOS share extension that sends data to a [Micropub](https://indieweb.org/micropub) endpoint. You will download the app, login with IndieAuth, then you can send micropub to your site by using the iOS or macOS share sheet.
 
 ## Working On
 
@@ -42,3 +42,7 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 	* All of these are actually just posts with different YAML front-matter. This is bad and they need to be changed into collections. Also video is currently just a link to YouTube. #IndieWebFail. That needs to be fixed.
 * node.js scripts run in the background to [[PESOS]] Goodreads content to my /data directory and periodically rebuilds my Jekyll site with fresh data.
 * The goal is to always have a static site as much as possible, with node.js micro services that update my static files as need be. Eventually, if needed, having [[node.js]] store data in a database and then whenever data is updated, re-publish static files. I would like to stick with jekyll as long as possible, but if that ever gets to the point that it is too complicated, the goal is to build a node.js module that exports HTML through a template language like Jade.
+
+_Last Updated March 2017_
+
+_For more information on the [IndieWeb](https://indieweb.org)_
