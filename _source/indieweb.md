@@ -2,6 +2,9 @@
 layout: page
 title: Indieweb
 permalink: /indieweb/
+syndication:
+ - name: IndieWeb
+   url: https://indieweb.org/User:Eddiehinkle.com
 ---
 Here's a look at how my website complies with IndieWeb standards and what my plans and ideas are for the future of my site and for the IndieWeb.
 
