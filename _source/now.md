@@ -15,7 +15,7 @@ Curious about what I'm up to and what I'm currently focusing on?  That's what th
 - Chronicling this year of my life daily through my [Project365 Photos](/project365).
 - Building my personal website (this site) out with more features focused on my life and focused on [IndieWeb standards](http://eddiehinkle.com/indieweb).
 - Building my own Task Manager: Clarity.
-- Laying the ground-work for an Open Source iOS app called **Indigenous** built for this site and the [IndieWeb](http://eddiehinkle.com/indieweb)
+- Laying the ground-work for an Open Source iOS app called **[Indigenous](http://eddiehinkle.com/indigenous)** built for this site and the [IndieWeb](http://eddiehinkle.com/indieweb)
 - Working on a Goodreads API wrapper in TypeScript called [Bookmark](https://github.com/EdwardHinkle/bookmark)
 - Writing my first non-fiction book: "For Unto Us...", it's a Christmas book. I'm hoping to release it in time for Christmas 2017.
 
