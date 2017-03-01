@@ -20,7 +20,7 @@ People interested in testing indigenous on their sites.
 
 * [Eddie Hinkle](http://eddiehinkle.com)
 * [Aaron Parecki](https://aaronparecki.com/)
-* [Jonathan LaCour]([)https://cleverdevil.io)
+* [Jonathan LaCour](https://cleverdevil.io)
 * ...
 
 
