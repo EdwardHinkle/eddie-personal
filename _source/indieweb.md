@@ -1,3 +1,10 @@
+---
+layout: page
+title: Indieweb
+permalink: /indieweb/
+---
+Here's a look at how my website complies with IndieWeb standards and what my plans and ideas are for the future of my site and for the IndieWeb.
+
 ## Projects
 * indigenous (Under Development) - A iOS and macOS share extension that sends data to a Micropub endpoint. You will download the app, login with IndieAuth, then you can send micropub to your site by using the iOS or macOS share sheet.
 
