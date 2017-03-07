@@ -2,7 +2,7 @@
 layout: post
 title:  "The Power to Make or Break..."
 date:   2017-02-12 18:00:00 -0500
-type: post
+type: article
 categories: faith
 tags: [faith, church, pastors]
 duration: 4
