@@ -5,10 +5,17 @@ feed: true
 
 <div class="home">
 
+  {% assign photos = site.note | where_exp:"item","item.tags contains 'Project365'" | sort: 'date' | reverse %}
+  {% for post in photos | limit: 3 %}
+    {% include preview-types/preview.html %}
+  {% endfor %}
+
   <ul class="post-list">
     {% assign documents = site.documents | sort: 'date' | reverse %}
     {% for post in documents %}
-      {% include preview-types/preview.html %}
+      {% if post.photo == undefined and post.video == undefined %}
+        {% include preview-types/preview.html %}
+      {% endif %}
     {% endfor %}
   </ul>
 
