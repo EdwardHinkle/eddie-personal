@@ -4,6 +4,7 @@ title: Indigenous
 permalink: /indigenous/
 syndication:
  - name: IndieWeb
+   image: images/indiewebcamp.svg
    url: https://indieweb.org/indigenous
 excerpt: Indigenous is a simple share extension for iOS and macOS for posting your website using Micropub.
 ---
@@ -22,6 +23,7 @@ People interested in testing indigenous on their sites.
 * [Eddie Hinkle](http://eddiehinkle.com)
 * [Aaron Parecki](https://aaronparecki.com/)
 * [Jonathan LaCour](https://cleverdevil.io)
+* [Michael Bishop](https://miklb.com)
 * ...
 
 
