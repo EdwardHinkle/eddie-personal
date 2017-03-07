@@ -11,11 +11,11 @@ Curious about what I'm up to and what I'm currently focusing on?  That's what th
 - Just moved to Frederick, MD this year.
 - Currently working at [Maestro](https://meetmaestro.com).
 
-- Working on understanding how to really [Cherish]({% post_url book-reviews/2017-02-10-cherish %}) my Wife, [Ashley](http://ashleyhinkle.com).
-- Chronicling this year of my life daily through my [Project365 Photos](/project365).
-- Building my personal website (this site) out with more features focused on my life and focused on [IndieWeb standards](http://eddiehinkle.com/indieweb).
+- Working on understanding how to really [Cherish]({{ site.baseurl }}{% link _media/read/cherish.md %}) my Wife, [Ashley](http://ashleyhinkle.com).
+- Chronicling this year of my life daily through my [Project365 Photos]({% link 365.md %}).
+- Building my personal website (this site) out with more features focused on my life and focused on [IndieWeb standards]({% link indieweb.md %}).
 - Building my own Task Manager: Clarity.
-- Laying the ground-work for an Open Source iOS app called **[Indigenous](http://eddiehinkle.com/indigenous)** built for this site and the [IndieWeb](http://eddiehinkle.com/indieweb)
+- Laying the ground-work for an Open Source iOS app called **[Indigenous]({% link indigenous.md %})** built for this site and the [IndieWeb]({% link indieweb.md %})
 - Working on a Goodreads API wrapper in TypeScript called [Bookmark](https://github.com/EdwardHinkle/bookmark)
 - Writing my first non-fiction book: "For Unto Us...", it's a Christmas book. I'm hoping to release it in time for Christmas 2017.
 
