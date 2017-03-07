@@ -4,19 +4,19 @@ title: Indieweb
 permalink: /indieweb/
 syndication:
  - name: IndieWeb
+   image: images/indiewebcamp.svg
    url: https://indieweb.org/User:Eddiehinkle.com
 excerpt: Here's a look at how my website complies with IndieWeb standards and what my plans and ideas are for the future of my site and for the IndieWeb.
 ---
 Here's a look at how my website complies with IndieWeb standards and what my plans and ideas are for the future of my site and for the IndieWeb.
 
 ## Projects
-* [Indigenous](http://eddiehinkle.com/indigenous) (Under Development) - A iOS and macOS share extension that sends data to a [Micropub](https://indieweb.org/micropub) endpoint. You will download the app, login with IndieAuth, then you can send micropub to your site by using the iOS or macOS share sheet.
+* [Indigenous]({% link indigenous.md %}) (Under Development) - A iOS and macOS share extension that sends data to a [Micropub](https://indieweb.org/micropub) endpoint. You will download the app, login with IndieAuth, then you can send micropub to your site by using the iOS or macOS share sheet.
 
 ## Working On
 
 ### Currently Working
 * Finishing marking up my templates with [microformats](https://indieweb.org/microformats)
-* Converting current posts into different collection types that match IndieWeb post types.
 * Finish [PESOS](https://indieweb.org/PESOS) reading data from Goodreads to my site, build a read page to be my central portal for my reading information.
 
 ### Itches
@@ -35,6 +35,7 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 * Explore Read-It-Later style app that utilizes h-feed and micropub with private read posts from your site.
 
 ### Completed
+* Converting current posts into different collection types that match IndieWeb post types.
 * Marked up site content with microformats
 * Added basic level of PESOS for Goodreads currently reading and recently read books.
 * Set up Web Sign In
@@ -43,7 +44,10 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 ## Implementation Design
 * This site is a standard jekyll site.
 	* Currently my site contains the following post types: article, book review, photo, video.
-	* All of these are actually just posts with different YAML front-matter. This is bad and they need to be changed into collections. Also video is currently just a link to YouTube. #IndieWebFail. That needs to be fixed.
+	* I have two types of Jekyll collections: note and media.
+    * Note is the general all purpose collection type. Using different attributes based on [post type discovery](https://indieweb.org/post-type-discovery), Jekyll uses different template includes to emulate different post types.
+    * The media collection is for the read/watch/listen post types. I created this as a different collection type because it's an area that I plan to do a lot of experimenting in and don't want to lock myself into anything or mess up my other post types while experimenting. I no longer use posts within Jekyll.
+  * video is currently just a link to YouTube. #IndieWebFail. That needs to be fixed.
 * node.js scripts run in the background to PESOS Goodreads content to my /data directory and periodically rebuilds my Jekyll site with fresh data.
 * The goal is to always have a static site as much as possible, with node.js micro services that update my static files as need be. Eventually, if needed, having node.js store data in a database and then whenever data is updated, re-publish static files. I would like to stick with jekyll as long as possible, but if that ever gets to the point that it is too complicated, the goal is to build a node.js module that exports HTML through a template language like Jade.
 
