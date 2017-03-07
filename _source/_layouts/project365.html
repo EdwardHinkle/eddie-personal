@@ -4,10 +4,9 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.type == "micro-post" && post.tags[0] == "project365" %}
-        {% include preview-types/preview-{{post.type}}.html %}
-      {% endif %}
+    {% assign posts = site.collections.note | where_exp: "item", "item.tags[0] == 'project365'" %}
+    {% for post in posts %}
+      {% include preview-types/preview-{{post.type}}.html %}
     {% endfor %}
   </ul>
 

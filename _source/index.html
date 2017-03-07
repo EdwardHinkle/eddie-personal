@@ -6,8 +6,9 @@ feed: true
 <div class="home">
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      {% include preview-types/preview-{{post.type}}.html %}
+    {% assign documents = site.documents | sort: 'date' | reverse %}
+    {% for post in documents %}
+      {% include preview-types/preview.html %}
     {% endfor %}
   </ul>
 

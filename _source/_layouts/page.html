@@ -13,9 +13,9 @@ layout: default
 
   <footer class="">
     Syndicated: 
-    {% if page.syndication && page.syndication.length > 0 %}
+    {% if page.syndication %}
       {% for syndicated in page.syndication %}
-        <a class="u-syndication" href="{{syndicated.url}}">{{syndicated.name}}</a>
+        {% include syndication.html %}
       {% endfor %}
     {% endif %}
   </footer>

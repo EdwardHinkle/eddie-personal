@@ -1,0 +1,27 @@
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="dt-published">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span rel="author" class="p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+    <span class="reading-time-container">{{ page.duration}} min read</span>
+        <span class="tag-container">
+          {% for tag in page.tags %}
+            <span class="post-tag p-category">{{ tag }}</span>
+          {% endfor %}
+        </span>
+        <span class="fb-like" data-href="{{ page.url | prepend: site.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <footer class="">
+    Syndicated: {% if page.syndication %}
+      {% for syndicated in page.syndication %}
+        {% include syndication.html %}
+      {% endfor %}
+    {% endif %}
+  </footer>
+
+</article>

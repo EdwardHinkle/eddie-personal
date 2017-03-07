@@ -1,22 +1,32 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="dt-published">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span rel="author" class="p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
-    <span class="reading-time-container">{{ page.reading_time}} min read</span>
-        <span class="tag-container">
-          {% for tag in page.tags %}
-            <span class="post-tag p-category">{{ tag }}</span>
-          {% endfor %}
-        </span>
-        <span class="fb-like" data-href="{{ page.url | prepend: site.url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></span></p>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-</article>
+{% if page.in-reply-to %}
+    {% include /preview-reply.html %}
+{% else %}
+    {% if page.repost-of %}
+        {% include preview-types/preview-repost.html %}
+    {% else %}
+        {% if page.like-of %}
+            {% include preview-types/preview-favorite.html %}
+        {% else %}
+            {% if page.isbn %}
+                {% include page-types/book.html %}
+            {% else %}
+                {% if page.video %}
+                    {% include page-types/video.html %}
+                {% else %}
+                    {% if page.photo %}
+                        {% include page-types/photo.html %}
+                    {% else %}
+                        {% if page.title %}
+                            {% include page-types/article.html %}
+                        {% else %}
+                            {% include preview-types/preview-note.html %}
+                        {% endif %}
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endif %}

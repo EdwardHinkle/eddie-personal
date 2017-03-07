@@ -27,9 +27,9 @@ destination: _build
 markdown: kramdown
 
 collections:
-	note:
-     	output: true
-		permalink: /:year/:month/:day/:title/
-	media:
-		output: true
-		permalink: /:path/:title/
+  note:
+    output: true
+    permalink: /social/:year/:month/:title/
+  media:
+    output: true
+    permalink: /:path/:title/
