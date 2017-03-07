@@ -4,9 +4,9 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
-    {% assign posts = site.collections.note | where_exp: "item", "item.tags[0] == 'project365'" %}
+    {% assign posts = site.note | where_exp:"item","item.tags contains 'Project365'" | sort: 'date' | reverse %}
     {% for post in posts %}
-      {% include preview-types/preview-{{post.type}}.html %}
+      {% include preview-types/preview.html %}
     {% endfor %}
   </ul>
 

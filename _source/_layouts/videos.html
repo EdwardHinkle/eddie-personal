@@ -4,10 +4,9 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.type == "video" %}
-        {% include preview-types/preview-{{post.type}}.html %}
-      {% endif %}
+    {% assign posts = site.note | where_exp:"item","item.video != undefined" | sort: 'date' | reverse %}
+    {% for post in posts %}
+      {% include preview-types/preview.html %}
     {% endfor %}
   </ul>
 

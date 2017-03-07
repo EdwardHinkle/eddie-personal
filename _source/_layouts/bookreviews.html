@@ -4,10 +4,9 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.type == "book" %}
-        {% include preview-types/preview-{{post.type}}.html %}
-      {% endif %}
+    {% assign posts = site.media | where_exp:"item","item.isbn != undefined" | sort: 'date' | reverse %}
+    {% for post in posts %}
+      {% include preview-types/preview.html %}
     {% endfor %}
   </ul>
 
