@@ -2,7 +2,7 @@
 layout: now
 title: /now
 permalink: /now/
-excerpt: Curious about what I'm up to and what I'm currently focusing on?  That's what this page is all about. Current as of February 2017.
+excerpt: Curious about what I'm up to and what I'm currently focusing on?  That's what this page is all about. Current as of March 2017.
 root_page: true
 ---
 
@@ -10,6 +10,7 @@ Curious about what I'm up to and what I'm currently focusing on?  That's what th
 
 - Just moved to Frederick, MD this year.
 - Currently working at [Maestro](https://meetmaestro.com).
+- Working with [Eli](https://twitter.com/elidchoi) to start a new church in Frederick, [Home Church](http://homechurchfrederick.org)
 
 - Working on understanding how to really [Cherish]({{ site.baseurl }}{% link _media/read/cherish.md %}) my Wife, [Ashley](http://ashleyhinkle.com).
 - Chronicling this year of my life daily through my [Project365 Photos]({% link 365.md %}).
