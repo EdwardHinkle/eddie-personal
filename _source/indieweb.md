@@ -33,6 +33,7 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 ### Random Brainstorm Ideas for Future
 * Lifestream Micropub Syncing app. An iOS app that syncs the Healthkit data that you choose up to your micropub endpoint.
 * Explore Read-It-Later style app that utilizes h-feed and micropub with private read posts from your site.
+* Explore JavaScript IndieWeb Interactions versus Web Actions.
 
 ### Completed
 * Converting current posts into different collection types that match IndieWeb post types.
