@@ -44,7 +44,7 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 
 ## Implementation Design
 * This site is a standard jekyll site.
-	* Currently my site contains the following post types: article, book review, photo, video.
+	* Currently my site contains the following post types: article, book review, photo, video and RSVPs.
 	* I have two types of Jekyll collections: note and media.
     * Note is the general all purpose collection type. Using different attributes based on [post type discovery](https://indieweb.org/post-type-discovery), Jekyll uses different template includes to emulate different post types.
     * The media collection is for the read/watch/listen post types. I created this as a different collection type because it's an area that I plan to do a lot of experimenting in and don't want to lock myself into anything or mess up my other post types while experimenting. I no longer use posts within Jekyll.
