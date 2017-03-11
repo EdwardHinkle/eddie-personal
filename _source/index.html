@@ -13,7 +13,7 @@ feed: true
   <ul class="post-list">
     {% assign documents = site.documents | sort: 'date' | reverse %}
     {% for post in documents %}
-      {% if post.photo == undefined and post.video == undefined %}
+      {% if post.photo == undefined and post.video == undefined and post.p-rsvp == undefined %}
         {% include preview-types/preview.html %}
       {% endif %}
     {% endfor %}
