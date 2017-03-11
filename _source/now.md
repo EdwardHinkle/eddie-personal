@@ -4,6 +4,7 @@ title: /now
 permalink: /now/
 excerpt: Curious about what I'm up to and what I'm currently focusing on?  That's what this page is all about. Current as of March 2017.
 root_page: true
+page_order: 3
 ---
 
 Curious about what I'm up to and what I'm currently focusing on?  That's what this page is all about.

@@ -4,6 +4,7 @@ title: /using
 permalink: /using/
 excerpt: this page exists to explain the tools that I use for personal and professional everyday use. Current as of February 2017.
 root_page: true
+page_order: 4
 ---
 
 ### Personal Life
