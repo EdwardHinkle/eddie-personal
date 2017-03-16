@@ -10,19 +10,23 @@
             {% if post.like-of %} <!-- Like -->
                 {% include preview-types/preview-favorite.html %}
             {% else %}
-                {% if post.isbn %} <!-- Book -->
-                    {% include preview-types/preview-book.html %}
+                {% if post.show_name and post.show_season %} <!-- Watch TV -->
+                    {% include preview-types/preview-watch.html %}
                 {% else %}
-                    {% if post.video %} <!-- Video -->
-                        {% include preview-types/preview-video.html %}
+                    {% if post.isbn %} <!-- Book -->
+                        {% include preview-types/preview-book.html %}
                     {% else %}
-                        {% if post.photo %} <!-- Photo -->
-                            {% include preview-types/preview-photo.html %}
+                        {% if post.video %} <!-- Video -->
+                            {% include preview-types/preview-video.html %}
                         {% else %}
-                            {% if post.title %} <!-- Article -->
-                                {% include preview-types/preview-article.html %}
-                            {% else %} <!-- Note -->
-                                {% include preview-types/preview-note.html %}
+                            {% if post.photo %} <!-- Photo -->
+                                {% include preview-types/preview-photo.html %}
+                            {% else %}
+                                {% if post.title %} <!-- Article -->
+                                    {% include preview-types/preview-article.html %}
+                                {% else %} <!-- Note -->
+                                    {% include preview-types/preview-note.html %}
+                                {% endif %}
                             {% endif %}
                         {% endif %}
                     {% endif %}

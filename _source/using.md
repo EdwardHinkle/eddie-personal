@@ -12,6 +12,8 @@ page_order: 4
 - [Evernote](https://evernote.com/) for being my digital brain/filing system
 - [Google Drive](https://www.google.com/drive/) is my document storage
 - [2Do](http://www.2doapp.com/) is what I'm using to organize my tasks currently.
+- My toothbrush is [Quip](http://getquip.com/).
+- The primary Bible I use for my reading is the [Christian Standard Bible](http://csbible.com)
 
 ### Writing
 

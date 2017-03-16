@@ -1,0 +1,31 @@
+{% if show.show_name %}📺 
+    {% if show.status == 'finished' %}
+        Watched
+    {% endif %}
+    {% if show.status == 'interested' %}
+        Looking forward to
+    {% endif %}
+    {% if show.show_url %}
+        <strong><a href="{{show.show_url}}" target="_blank">{{show.show_name}}</a></strong>
+    {% else %}
+        <strong>{{show.show_name}}</strong>
+    {% endif %}
+    {% if show.show_premiere %}
+        <strong>Series Premiere</strong>
+    {% else %}
+        {% if show.show_finale %}
+            <strong>Series Finale</strong>
+        {% else %}
+            {% if show.show_season %}
+                Season {{show.show_season}}
+                    {% if show.season_finale %}
+                        <strong>Finale</strong>
+                    {% else %}
+                        {% if show.show_episode %}
+                        Episode {{show.show_episode}}
+                        {% endif %}
+                    {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endif %}
