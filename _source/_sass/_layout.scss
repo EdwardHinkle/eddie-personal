@@ -458,9 +458,6 @@ a, a:visited {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    background-color: #fff;
 
     .rsvp-date {
         display: inline-block;
@@ -498,4 +495,56 @@ a, a:visited {
     content: "\00a0\2022\00a0";
     color: inherit;
     padding-right: 4px;
+}
+
+.basic-card {
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: #fff;
+}
+
+.type-watch {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .basic-card {
+
+        .show-image {
+            display: inline-block;
+            width: 25%;
+            vertical-align: top;
+        }
+
+        .watch-content {
+            display: inline-block;
+            width: 74%;
+        }
+
+        .watch-info {
+            font-size: 18px;
+            // background-color: $primary-color;
+            // color: #fff;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+        }
+
+        &.words-0 {
+            .show-image {
+                vertical-align: middle;
+            }
+
+            .watch-info {
+                font-size: 26px;
+            }
+        }
+
+        .watch-status {
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+        }
+    }
 }
