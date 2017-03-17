@@ -13,5 +13,9 @@ show_url: http://abc.go.com/shows/designated-survivor
 show_image: https://image.tmdb.org/t/p/w640/yUH5SmKbQC3IPawTHUPWKZpzl6z.jpg
 episode_image: https://image.tmdb.org/t/p/w227_and_h127_bestv2/vcmxoYfLs8MGW1rQQP5c3X0dyXo.jpg
 permalink: /watch/:year/:month/:title/
+syndication:
+ - name: Twitter
+   icon: fa-twitter
+   url: https://twitter.com/EddieHinkle/status/842544263070138369
 ---
 Wow ... that was NOT how I saw that episode going... this show is good at throwing me for a loop.
