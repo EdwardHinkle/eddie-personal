@@ -13,7 +13,7 @@ Curious about what I'm up to and what I'm currently focusing on?  That's what th
 - Currently working at [Maestro](https://meetmaestro.com).
 - Working with [Eli](https://twitter.com/elidchoi) to start a new church in Frederick, [Home Church](http://homechurchfrederick.org)
 
-- Working on understanding how to really [Cherish]({{ site.baseurl }}{% link _media/read/cherish.md %}) my Wife, [Ashley](http://ashleyhinkle.com).
+- Working on understanding how to really [Cherish]({{ site.baseurl }}{% link _media/read/cherish-review.md %}) my Wife, [Ashley](http://ashleyhinkle.com).
 - Chronicling this year of my life daily through my [Project365 Photos]({% link 365.md %}).
 - Building my personal website (this site) out with more features focused on my life and focused on [IndieWeb standards]({% link indieweb.md %}).
 - Building my own Task Manager: Clarity.
