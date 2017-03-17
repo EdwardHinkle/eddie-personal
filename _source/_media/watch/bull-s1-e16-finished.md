@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ""
-date:   2017-03-16 23:00:54 -0500
+date:   2017-03-16 22:00:54 -0500
 tags: []
 status: finished
 show_name: "Bull"
