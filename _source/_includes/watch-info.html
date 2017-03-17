@@ -1,9 +1,9 @@
-{% if show.show_name %}📺 
+{% if show.show_name %}
     {% if show.status == 'finished' %}
-        Watched
+        📺 Watched
     {% endif %}
     {% if show.status == 'interested' %}
-        Looking forward to
+        📺 💭 Looking forward to
     {% endif %}
     {% if show.show_url %}
         <strong><a href="{{show.show_url}}" target="_blank">{{show.show_name}}</a></strong>

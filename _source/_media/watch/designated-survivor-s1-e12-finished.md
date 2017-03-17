@@ -2,7 +2,7 @@
 layout: post
 title:  ""
 date:   2017-03-16 14:00:54 -0500
-tags: []
+tags: [political]
 status: finished
 show_name: "Designated Survivor"
 show_season: 1

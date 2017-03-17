@@ -2,7 +2,7 @@
 layout: post
 title:  ""
 date:   2017-03-2 14:00:54 -0500
-tags: []
+tags: [crime-medical]
 status: finished
 show_name: "Chicago Justice"
 show_season: 1

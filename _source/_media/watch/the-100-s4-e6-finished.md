@@ -2,7 +2,7 @@
 layout: post
 title:  ""
 date:   2017-03-15 22:30:54 -0500
-tags: []
+tags: [fantasy]
 status: finished
 show_name: "The 100"
 show_season: 4
