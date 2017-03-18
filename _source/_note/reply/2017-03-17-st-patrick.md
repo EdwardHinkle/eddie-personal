@@ -1,5 +1,6 @@
 ---
 layout: post
+featured: true
 date: 2017-03-17 17:00:00 -0500
 type: note
 title: ""

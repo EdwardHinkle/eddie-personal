@@ -1,5 +1,6 @@
 ---
 layout: post
+featured: true
 title:  "The one book that will change your marriage"
 date:   2017-02-10 14:30:54 -0500
 type: book

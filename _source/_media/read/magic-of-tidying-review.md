@@ -1,5 +1,6 @@
 ---
 layout: post
+featured: true
 title:  "The art that was never taught"
 date:   2017-02-12 14:30:54 -0500
 type: book

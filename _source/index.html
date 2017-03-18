@@ -11,11 +11,9 @@ feed: true
   {% endfor %}
 
   <ul class="post-list">
-    {% assign documents = site.documents | sort: 'date' | reverse %}
+    {% assign documents = site.documents | where_exp:"item", "item.featured == true" | sort: 'date' | reverse %}
     {% for post in documents %}
-      {% if post.photo == undefined and post.video == undefined and post.p-rsvp == undefined and post.show_name == undefined %}
         {% include preview-types/preview.html %}
-      {% endif %}
     {% endfor %}
   </ul>
 

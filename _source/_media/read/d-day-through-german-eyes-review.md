@@ -1,5 +1,6 @@
 ---
 layout: post
+featured: true
 title:  "The view from the trenches"
 date:   2017-02-25 15:51:54 -0500
 type: book
