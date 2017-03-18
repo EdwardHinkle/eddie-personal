@@ -18,11 +18,10 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 ### Currently Working
 * Build a Micropub Endpoint based on [Node-Micropub](https://github.com/voxpelli/node-micropub-express)
 * Finish [PESOS](https://indieweb.org/PESOS) reading data from Goodreads to my site, build a read page to be my central portal for my reading information.
-* Add support for replying/citing posts
 
 ### Itches
 * Set up PESOS import of Kindle Highlights
-* Explore watch post type for logging TV and Movies, with /watch portal page.
+* Explore more in-depth watch post type for logging TV and Movies, with /watch portal page.
 * Move video posts from YouTube to [POSSE](https://indieweb.org/POSSE)
 * Add support for sending [Webmentions](https://indieweb.org/webmention)
 * Add support for receiving webmentions
@@ -35,6 +34,8 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 * Explore JavaScript IndieWeb Interactions versus Web Actions.
 
 ### Completed
+* Add support for replying/citing posts
+* Created [watch](https://indieweb.org/watch) posts for shows that I've watched and shows that I'm interested in watching.
 * Converting current posts into different collection types that match IndieWeb post types.
 * Marked up site content with microformats
 * Added basic level of PESOS for Goodreads currently reading and recently read books.
