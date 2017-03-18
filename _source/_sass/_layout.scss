@@ -596,6 +596,10 @@ a, a:visited {
 
     .post-title {
         line-height: 1.2;
+
+        a {
+            color: #fff;
+        }
     }
 
     blockquote {
@@ -606,6 +610,11 @@ a, a:visited {
         color: darken($primary-color, 20%);
         -webkit-transition: color .5s;
         transition: color .5s;
+
+        &:hover, &:active {
+            color: lighten($primary-color, 20%);
+            text-decoration: none;
+        }
     }
 
     .fa-external-link {
@@ -647,10 +656,6 @@ a, a:visited {
             top: 25px;
             font-size: 3em;
         }
-    }
-
-    a:hover, a:active {
-        color: lighten($primary-color, 20%);
     }
 }
 

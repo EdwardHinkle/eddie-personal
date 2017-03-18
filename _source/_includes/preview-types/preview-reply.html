@@ -10,11 +10,11 @@
         <a rel="author" class="p-author h-card" href="http://eddiehinkle.com" style="display: none;">Eddie Hinkle</a>
     </div>
     <div class="reply-context">
-        <div>{{post.reply-author}} on <a href="{{post.in-reply-to}}" target="_blank">{{post.reply-site}}</a></div>
         <h2 class="post-title">
             <a class="post-link p-name u-url u-uid" href="{{ post.url | prepend: site.baseurl }}">{{ post.reply-title }}</a>
         </h2>
         <blockquote>{{post.reply-context}}</blockquote>
+        <div><i class="fa fa-reply" aria-hidden="true"></i> In Reply To  {{post.reply-author}} on <a href="{{post.in-reply-to}}" target="_blank">{{post.reply-site}} <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
     </div>
     <div class="reply-content post-excerpt e-content">{{ post.content }}</div>
 </li>
