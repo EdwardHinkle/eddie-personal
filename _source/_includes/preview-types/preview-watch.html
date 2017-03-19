@@ -9,7 +9,12 @@
     </span>
     {% capture wordCount %}{{ post.content | number_of_words }}{% endcapture %}
     <div class="basic-card words-{{wordCount}}">
-        <img class="show-image" src="{{post.show_image}}">
+        {% if post.show_name %}
+            <img class="show-image" src="{{post.show_image}}">
+        {% endif %}
+        {% if post.video_site_url or post.video_url %}
+            <img class="show-image" src="{{post.video_cover}}">
+        {% endif %}
         <div class="watch-content">
             <div class="watch-info">
                 {% assign show = post %}

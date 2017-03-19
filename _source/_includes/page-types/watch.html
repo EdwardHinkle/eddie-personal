@@ -11,7 +11,12 @@
   </header>
 
   <div class="basic-card">
-        <img class="show-image" src="{{page.show_image}}">
+        {% if page.show_name %}
+            <img class="show-image" src="{{page.show_image}}">
+        {% endif %}
+        {% if page.video_site_url or page.video_url %}
+            <img class="show-image" src="{{page.video_cover}}">
+        {% endif %}
         <div class="watch-content">
             <div class="watch-info">
               {% assign show = page %}

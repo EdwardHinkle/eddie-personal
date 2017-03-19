@@ -13,7 +13,7 @@ layout: default
             {% if page.like-of %}
                 {% include page-types/favorite.html %}
             {% else %}
-                {% if page.show_name and page.show_season %} <!-- Watch TV -->
+                {% if page.show_name or page.video_url or page.video_site_url %} <!-- Watch -->
                     {% include page-types/watch.html %}
                 {% else %}
                     {% if page.isbn %}
