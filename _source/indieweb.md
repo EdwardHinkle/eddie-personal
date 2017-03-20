@@ -20,6 +20,7 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 * Finish [PESOS](https://indieweb.org/PESOS) reading data from Goodreads to my site, build a read page to be my central portal for my reading information.
 
 ### Itches
+* Build Jekyll Extension that allows you to trigger a mention of someone or something within your markdown
 * Set up PESOS import of Kindle Highlights
 * Explore more in-depth watch post type for logging TV and Movies, with /watch portal page.
 * Move video posts from YouTube to [POSSE](https://indieweb.org/POSSE)
@@ -32,6 +33,8 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 * Lifestream Micropub Syncing app. An iOS app that syncs the Healthkit data that you choose up to your micropub endpoint.
 * Explore Read-It-Later style app that utilizes h-feed and micropub with private read posts from your site.
 * Explore JavaScript IndieWeb Interactions versus Web Actions.
+* Twitter API to h-feed page.
+* What would a modern web browser look/feel like? How do you navigate? How would it integrate with microformats, micropub, etc?
 
 ### Completed
 * Add support for replying/citing posts
