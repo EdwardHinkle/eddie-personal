@@ -667,3 +667,25 @@ a, a:visited {
 .reply-content {
     padding: 20px;
 }
+
+.flashback-post {
+    background-color: $primary-color;
+    padding: 20px;
+
+    h1, h2 {
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    a, .post-meta {
+        color: #fff;
+    }
+
+    > li {
+        display: block;
+    }
+
+    .type-video iframe {
+        box-shadow: none;
+    }
+}
