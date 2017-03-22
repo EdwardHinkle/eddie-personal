@@ -1,7 +1,7 @@
 ---
 layout: post
 featured: true
-title:  "This Day in Years Past..."
+title:  "On This Day..."
 date:   2017-03-22 8:00:00 -0500
 type: article
 categories: tech
@@ -13,7 +13,7 @@ syndication:
    image: images/indiewebcamp.svg
    url: https://news.indieweb.org/en
 ---
-I've added the ability to see posts from past years on my website. Now, on a day that has posts from previous years, you'll see a new blue "flashback" post at the top of my homepage. This post will highlight the post from the past.
+I've added the ability to see posts from past years on my website. Now, on a day that has posts from previous years, you'll see a new blue "flashback card" at the top of my homepage. This post will highlight the post from the past.
 
 ![Screenshot of This Day in Years Past]({{ site.url }}/images/post-images/this-day-in-years.png)
 
