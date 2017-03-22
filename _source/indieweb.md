@@ -31,6 +31,7 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 
 ### Random Brainstorm Ideas for Future
 * **Inscribe**, a Micropub Media Check-in Web App. Start with TV show and Movie check ins. Then move on to books. Allows the user to  search for Episodes of a TV show, a Movie or a Book and mark the status as "Interested, In Progress or Finished". Eventually, maybe it can be expanded to support moving Interested items to In Progress and In Progress items to Finished.
+* A service that allows you to login via IndieAuth, enter sites that you want to follow via H-Feed and it will send you a daily Kindle newsletter with any new posts from sites you want to follow.
 * Lifestream Micropub Syncing app. An iOS app that syncs the Healthkit data that you choose up to your micropub endpoint.
 * Explore Read-It-Later style app that utilizes h-feed and micropub with private read posts from your site.
 * Explore JavaScript IndieWeb Interactions versus Web Actions.
