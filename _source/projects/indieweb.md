@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Indieweb
-permalink: /indieweb/
+permalink: /projects/indieweb/
 syndication:
  - name: IndieWeb
    image: images/indiewebcamp.svg
@@ -11,7 +11,7 @@ excerpt: Here's a look at how my website complies with IndieWeb standards and wh
 Here's a look at how my website complies with IndieWeb standards and what my plans and ideas are for the future of my site and for the IndieWeb.
 
 ## Projects
-* [Indigenous]({% link indigenous.md %}) (Under Development) - A iOS and macOS share extension that sends data to a [Micropub](https://indieweb.org/micropub) endpoint. You will download the app, login with IndieAuth, then you can send micropub to your site by using the iOS or macOS share sheet.
+* [Indigenous]({% link projects/indigenous.md %}) (Under Development) - A iOS and macOS share extension that sends data to a [Micropub](https://indieweb.org/micropub) endpoint. You will download the app, login with IndieAuth, then you can send micropub to your site by using the iOS or macOS share sheet.
 
 ## Working On
 

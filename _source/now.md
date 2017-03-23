@@ -15,9 +15,9 @@ Curious about what I'm up to and what I'm currently focusing on?  That's what th
 
 - Working on understanding how to really [Cherish]({{ site.baseurl }}{% link _media/read/cherish-review.md %}) my Wife, [Ashley](http://ashleyhinkle.com).
 - Chronicling this year of my life daily through my [Project365 Photos]({% link 365.md %}).
-- Building my personal website (this site) out with more features focused on my life and focused on [IndieWeb standards]({% link indieweb.md %}).
+- Building my personal website (this site) out with more features focused on my life and focused on [IndieWeb standards]({% link projects/indieweb.md %}).
 - Building my own Task Manager: Clarity.
-- Laying the ground-work for an Open Source iOS app called **[Indigenous]({% link indigenous.md %})** built for this site and the [IndieWeb]({% link indieweb.md %})
+- Laying the ground-work for an Open Source iOS app called **[Indigenous]({% link projects/indigenous.md %})** built for this site and the [IndieWeb]({% link projects/indieweb.md %})
 - Working on a Goodreads API wrapper in TypeScript called [Bookmark](https://github.com/EdwardHinkle/bookmark)
 - Writing my first non-fiction book: "For Unto Us...", it's a Christmas book. I'm hoping to release it in time for Christmas 2017.
 
