@@ -720,6 +720,23 @@ a, a:visited {
 
 .type-like {
 
+    &.basic-card {
+        .post-meta {
+            background-color: $primary-color;
+            color: darken(#fff, 10%);
+            padding: 10px 20px;
+
+            a {
+                color: #fff;
+
+                &:hover, &:active {
+                    color: lighten($primary-color, 20%);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
     .post-header {
         margin-bottom: 10px;
     }
