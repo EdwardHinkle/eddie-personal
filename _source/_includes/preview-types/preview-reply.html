@@ -12,7 +12,7 @@
     <div class="reply-context">
         <h2 class="post-title p-name">{{ post.reply-title }}</h2>
         <blockquote>{{post.reply-context}}</blockquote>
-        <div><i class="fa fa-reply" aria-hidden="true"></i> In Reply To  {{post.reply-author}} on <a href="{{post.in-reply-to}}" target="_blank">{{post.reply-site}} <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
+        <div class="reply-author"><span class="p-author h-card">{% if post.reply-photo %}<img class="u-photo" src="{{post.reply-photo}}">{% endif %}<i class="fa fa-reply" aria-hidden="true"></i> In Reply To  <a href="{{post.reply-site}}" class="p-name u-url">{{post.reply-author}}</a></span> on <a class="u-url" href="{{post.in-reply-to}}" target="_blank">{{post.reply-site}} <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
     </div>
     <div class="reply-content post-excerpt e-content">{{ post.content}}</div>
 </li>

@@ -613,8 +613,19 @@ a, a:visited {
         color: #fff;
     }
 
-    a {
+    a:not(.p-name) {
         color: darken($primary-color, 20%);
+        -webkit-transition: color .5s;
+        transition: color .5s;
+
+        &:hover, &:active {
+            color: lighten($primary-color, 20%);
+            text-decoration: none;
+        }
+    }
+
+    a.p-name {
+        color: #fff;
         -webkit-transition: color .5s;
         transition: color .5s;
 
@@ -667,6 +678,16 @@ a, a:visited {
             position: relative;
             top: 25px;
             font-size: 3em;
+        }
+    }
+
+    .reply-author {
+        img {
+            width: 50px;
+            margin-right: 10px;
+            border-radius: 10px;
+            height: auto;
+            vertical-align: middle;
         }
     }
 }

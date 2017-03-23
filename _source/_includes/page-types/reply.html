@@ -16,7 +16,7 @@
   <div class="reply-context u-in-reply-to h-cite">
         <h2 class="post-title">{{ page.reply-title }}</h2>
         <blockquote class="p-content">{{page.reply-context}}</blockquote>
-        <div><i class="fa fa-reply" aria-hidden="true"></i> In Reply To  <span class="p-author h-card">{{page.reply-author}}</span> on <a class="u-url" href="{{page.in-reply-to}}" target="_blank">{{page.reply-site}} <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
+        <div class="reply-author"><span class="p-author h-card">{% if page.reply-photo %}<img class="u-photo" src="{{page.reply-photo}}">{% endif %}<i class="fa fa-reply" aria-hidden="true"></i> In Reply To  <a href="{{page.reply-site}}" class="p-name u-url">{{page.reply-author}}</a></span> on <a class="u-url" href="{{page.in-reply-to}}" target="_blank">{{page.reply-site}} <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
   </div>
   
 
