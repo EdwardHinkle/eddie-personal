@@ -6,7 +6,7 @@ date:   2017-03-22 8:00:00 -0500
 type: article
 categories: tech
 tags: [tech, indieweb]
-duration: 4
+duration: 2
 permalink: /article/:year/:month/:title.html
 syndication:
  - name: IndieNews
