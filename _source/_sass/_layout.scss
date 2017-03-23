@@ -717,3 +717,115 @@ a, a:visited {
         box-shadow: none;
     }
 }
+
+.type-like {
+
+    .post-header {
+        margin-bottom: 10px;
+    }
+
+    .like-statement {
+        background-color: $primary-color;
+        padding: 10px 20px;
+        color: darken(#fff, 10%);
+
+        a {
+            color: #fff;
+
+            &:hover, &:active {
+                color: lighten($primary-color, 20%);
+                text-decoration: none;
+            }
+        }   
+    }
+
+    .like-context {
+        background-color: #fff;
+        padding: 20px;
+
+        .post-title {
+            line-height: 1.2;
+        }
+
+        a:not(.p-name) {
+            color: darken($primary-color, 20%);
+            -webkit-transition: color .5s;
+            transition: color .5s;
+
+            &:hover, &:active {
+                color: lighten($primary-color, 20%);
+                text-decoration: none;
+            }
+        }
+
+        .fa-external-link {
+            position: relative;
+            top: 2px
+        }
+
+        blockquote {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 474px) {
+                margin: 0px;
+                margin-bottom: 10px;
+            }
+        }
+
+        blockquote {
+            font-size: 20px;
+            quotes: "\201C""\201D""\2018""\2019";
+            padding: 10px 20px;
+            line-height: 1.4;
+
+            &:before {
+                content: open-quote;
+                display: inline;
+                height: 0;
+                line-height: 0;
+                left: -10px;
+                position: relative;
+                top: 20px;
+                font-size: 3em;
+            }
+            
+            &:after {
+                content: close-quote;
+                display: inline;
+                height: 0;
+                line-height: 0;
+                left: 10px;
+                position: relative;
+                top: 25px;
+                font-size: 3em;
+            }
+        }
+
+        .post-title {
+            display: inline-block;
+            width: 80%;
+            margin-left: 20px;
+            vertical-align: top;
+        }
+
+        .like-author {
+            display: inline-block;
+
+            .p-author {
+                display: block;
+                text-align: center;
+            }
+
+            img {
+                width: 80px;
+                border-radius: 10px;
+                height: auto;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+    }
+}

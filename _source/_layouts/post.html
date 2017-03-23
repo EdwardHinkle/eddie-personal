@@ -10,8 +10,8 @@ layout: default
         {% if page.repost-of %}
             {% include page-types/repost.html %}
         {% else %}
-            {% if page.like-of %}
-                {% include page-types/favorite.html %}
+            {% if page.mf-u-like-of %}
+                {% include page-types/like.html %}
             {% else %}
                 {% if page.show_name or page.video_url or page.video_site_url %} <!-- Watch -->
                     {% include page-types/watch.html %}
