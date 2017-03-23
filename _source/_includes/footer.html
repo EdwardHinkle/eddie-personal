@@ -8,13 +8,9 @@
           <li>
             <img class="u-photo" src="{{ site.baseurl }}/images/profile.jpg" alt="Eddie Hinkle" style="display: none;" />
             <a rel="me" class="u-url p-name" href="http://eddiehinkle.com">Eddie Hinkle</a>
-            <p class="p-note" style="display: none;">Follower of Jesus. <a href="http://ashleyhinkle.com">Ashley</a>’s Husband. Software Engineer. Avid Reader. Aspiring Writer. Tech Aficionado. Part of <a href="http://meetmaestro.com">TeamMaestro.</a></p>
+            <p class="p-note">Believer, Husband, Software Engineer, Pastor. <a href="http://eddiehinkle.com/about">Read More</a></p>
           </li>
-          <li><a href="mailto:hello@eddiehinkle.com"><span rel="me" class="u-email">hello@eddiehinkle.com</span></a></li>
         </ul>
-        <a href="https://apple.news/{{ site.applenews_id }}">
-          <span class="icon-follow-news">{% include Follow_on_AppleNews_blk_badge_RGB.svg %}</span>
-        </a>
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -27,7 +23,28 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+
+          {% if site.instagram_username %}
+          <li>
+            {% include icon-instagram.html username=site.instagram_username %}
+          </li>
+          {% endif %}
+
+          {% if site.facebook_username %}
+          <li>
+            {% include icon-facebook.html username=site.facebook_username %}
+          </li>
+          {% endif %}
+
+          {% if site.email %}
+          <li>
+            {% include icon-email.html email=site.email %}
+          </li>
+          {% endif %}
         </ul>
+        <a href="https://apple.news/{{ site.applenews_id }}">
+          <span class="icon-follow-news">{% include Follow_on_AppleNews_blk_badge_RGB.svg %}</span>
+        </a>
       </div>
 
       <div class="footer-col footer-col-2"></div>
