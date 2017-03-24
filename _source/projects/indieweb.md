@@ -20,17 +20,18 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 * Finish [PESOS](https://indieweb.org/PESOS) reading data from Goodreads to my site, build a read page to be my central portal for my reading information.
 
 ### Itches
+* Add support for displaying webmentions
 * Build Jekyll Extension that allows you to trigger a mention of someone or something within your markdown
+* Move video posts from YouTube to [POSSE](https://indieweb.org/POSSE)
 * Set up PESOS import of Kindle Highlights
 * Explore more in-depth watch post type for logging TV and Movies, with /watch portal page.
-* Move video posts from YouTube to [POSSE](https://indieweb.org/POSSE)
-* Add support for sending [Webmentions](https://indieweb.org/webmention)
-* Add support for receiving webmentions
 * Import all the old Tweets, Instagram and Facebook posts after filtering out the irrelevant posts I don't want to keep.
 * Begin POSSE processes starting with notes
+* Add support for sending [Webmentions](https://indieweb.org/webmention)
 
 ### Random Brainstorm Ideas for Future
 * **Inscribe**, a Micropub Media Check-in Web App. Start with TV show and Movie check ins. Then move on to books. Allows the user to  search for Episodes of a TV show, a Movie or a Book and mark the status as "Interested, In Progress or Finished". Eventually, maybe it can be expanded to support moving Interested items to In Progress and In Progress items to Finished.
+* A video service that uses IndieAuth and Webmentions to invite other users into a private WebRTC video rooms.
 * A service that allows you to login via IndieAuth, enter sites that you want to follow via H-Feed and it will send you a daily Kindle newsletter with any new posts from sites you want to follow.
 * Lifestream Micropub Syncing app. An iOS app that syncs the Healthkit data that you choose up to your micropub endpoint.
 * Explore Read-It-Later style app that utilizes h-feed and micropub with private read posts from your site.
@@ -38,6 +39,7 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 * What would a modern web browser look/feel like? How do you navigate? How would it integrate with microformats, micropub, etc?
 
 ### Completed
+* Add support for receiving webmentions
 * Add support for replying/citing posts
 * Created [watch](https://indieweb.org/watch) posts for shows that I've watched and shows that I'm interested in watching.
 * Converting current posts into different collection types that match IndieWeb post types.
