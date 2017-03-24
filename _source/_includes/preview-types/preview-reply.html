@@ -1,7 +1,7 @@
 <li class="type-reply h-entry basic-card">
     <div class="post-meta">
         <a class="u-url u-uid" href="{{ post.url | prepend: site.baseurl }}"><time class="date-container dt-published" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time></a>
-        <span class="reading-time-container">{{ post.duration}} min read</span>
+        {% if post.duration %}<span class="reading-time-container">{{ post.duration}} min read</span>{% endif %}
         <span class="tag-container">
         {% for tag in post.tags %}
             <span class="post-tag p-category">{{ tag }}</span>

@@ -4,7 +4,7 @@
     <a href="/" class="u-author"></a>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
     <div class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="dt-published">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span rel="author" class="p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
-    <span class="reading-time-container">{{ page.duration}} min read</span>
+    {% if page.duration %}<span class="reading-time-container">{{ page.duration}} min read</span>{% endif %}
         <span class="tag-container">
           {% for tag in page.tags %}
             <span class="post-tag p-category">{{ tag }}</span>
