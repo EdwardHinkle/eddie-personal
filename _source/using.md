@@ -25,6 +25,7 @@ page_order: 4
 - [Visual Studio Code](https://code.visualstudio.com/) is my IDE
 - For my day job, I currently live in the JavaScript world, primarily [Angular](https://angularjs.org/) and [Node.js](https://nodejs.org/en/), in [TypeScript](https://www.typescriptlang.org/) whenever possible..
 - On the side I play around with [Swift](https://swift.org/).
+- When programming you use lots of windows on the computer, to manage those I use an app called [Magnet](http://magnet.crowdcafe.com).
 
 ### Communication
 
