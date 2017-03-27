@@ -17,17 +17,21 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 
 ### Currently Working
 * Build a Micropub Endpoint based on [Node-Micropub](https://github.com/voxpelli/node-micropub-express)
-* Finish [PESOS](https://indieweb.org/PESOS) reading data from Goodreads to my site, build a read page to be my central portal for my reading information.
+* Add support for displaying webmentions
 
 ### Itches
-* Add support for displaying webmentions
+* Track [/listen](https://indieweb.org/listen) posts for podcasts with media framents.
+* Track [/listen](https://indieweb.org/listen) posts for audiobooks with progress.
+* Track [/read](https://indieweb.org/read) posts for online articles.
 * Build Jekyll Extension that allows you to trigger a mention of someone or something within your markdown
+* Finish [PESOS](https://indieweb.org/PESOS) reading data from Goodreads to my site, build a read page to be my central portal for my reading information.
 * Move video posts from YouTube to [POSSE](https://indieweb.org/POSSE)
 * Set up PESOS import of Kindle Highlights
 * Explore more in-depth watch post type for logging TV and Movies, with /watch portal page.
 * Import all the old Tweets, Instagram and Facebook posts after filtering out the irrelevant posts I don't want to keep.
 * Begin POSSE processes starting with notes
-* Add support for sending [Webmentions](https://indieweb.org/webmention)
+* Add native support for sending [Webmentions](https://indieweb.org/webmention)
+* Build a Year-in-Review page that shows listen, watch and read stats, words written in blog posts, # of replies, # of likes, etc.
 
 ### Random Brainstorm Ideas for Future
 * **Inscribe**, a Micropub Media Check-in Web App. Start with TV show and Movie check ins. Then move on to books. Allows the user to  search for Episodes of a TV show, a Movie or a Book and mark the status as "Interested, In Progress or Finished". Eventually, maybe it can be expanded to support moving Interested items to In Progress and In Progress items to Finished.
@@ -39,10 +43,10 @@ Here's a look at how my website complies with IndieWeb standards and what my pla
 * What would a modern web browser look/feel like? How do you navigate? How would it integrate with microformats, micropub, etc?
 
 ### Completed
-* Add support for receiving webmentions
-* Add support for replying/citing posts
+* Added support for receiving webmentions
+* Added support for replying/citing posts
 * Created [watch](https://indieweb.org/watch) posts for shows that I've watched and shows that I'm interested in watching.
-* Converting current posts into different collection types that match IndieWeb post types.
+* Converted current posts into different collection types that match IndieWeb post types.
 * Marked up site content with microformats
 * Added basic level of PESOS for Goodreads currently reading and recently read books.
 * Set up Web Sign In
