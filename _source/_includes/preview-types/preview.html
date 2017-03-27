@@ -10,7 +10,7 @@
             {% if post.mf-u-like-of %} <!-- Like -->
                 {% include preview-types/preview-like.html %}
             {% else %}
-                {% if post.show_name or post.video_url or post.video_site_url %} <!-- Watch -->
+                {% if post.show_name or post.movie_name or post.video_url or post.video_site_url %} <!-- Watch -->
                     {% include preview-types/preview-watch.html %}
                 {% else %}
                     {% if post.isbn %} <!-- Book -->

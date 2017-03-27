@@ -5,7 +5,10 @@ layout: default
   {% include social-page-links.html %}
 
   <ul class="post-list">
-    {% assign posts = site.documents | where_exp:"item","item.show_name != undefined" | sort: 'date' | reverse %}
+    {% assign shows = site.documents | where_exp:"item","item.show_name != undefined" %}
+    {% assign movies = site.documents | where_exp:"item","item.movies_name != undefined" %}
+    
+    {% assign posts = shows | concat: movies | sort: 'date' | reverse %}
     {% for post in posts %}
       {% include preview-types/preview.html %}
     {% endfor %}

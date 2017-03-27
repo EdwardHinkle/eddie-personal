@@ -12,6 +12,9 @@
         {% if post.show_name %}
             <img class="show-image" src="{{post.show_image}}">
         {% endif %}
+        {% if post.movie_name %}
+            <img class="show-image" src="{{post.movie_image}}">
+        {% endif %}
         {% if post.video_site_url or post.video_url %}
             <img class="show-image" src="{{post.video_cover}}">
         {% endif %}
