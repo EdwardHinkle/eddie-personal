@@ -7,6 +7,7 @@ var request = require("request");
 var Promise = require('bluebird');
 var md5 = require('md5');
 var _ = require('lodash');
+var emojiData = require('emoji-data');
 
 
 gr.getSingleShelf({
@@ -61,14 +62,17 @@ request("https://webmention.io/api/mentions?token=" + config.webmention.token, {
         switch(mention.activity.type) {
             case 'like':
                 // Check if item exists
-                addReplaceOrIgnoreWebMention(webmentions[targetPage].likes, mention);
+                addOrCreateEmojiArray("+1", webmentions[targetPage].reactions, mention);
                 break;
             case 'link':
-                addReplaceOrIgnoreWebMention(webmentions[targetPage].mentions, mention);
+                if (tryAddEmojiReaction(webmentions[targetPage].reactions, mention) == false) {
+                    addReplaceOrIgnoreWebMention(webmentions[targetPage].mentions, mention);
+                }
                 break;
             case 'reply':
-                // At some point this should check the content and if the content is only an emoji, it should add it as a "reaction"
-                addReplaceOrIgnoreWebMention(webmentions[targetPage].replies, mention);
+                if (tryAddEmojiReaction(webmentions[targetPage].reactions, mention) == false) {
+                    addReplaceOrIgnoreWebMention(webmentions[targetPage].replies, mention);
+                }
                 break;
         }
     }).then(() => {
@@ -81,6 +85,48 @@ request("https://webmention.io/api/mentions?token=" + config.webmention.token, {
         }); 
     });
 });
+
+function tryAddEmojiReaction(reactionsArray, mention) {
+    var emoji = getEmojiReaction(mention)
+    if (emoji == undefined) {
+        return false;
+    } else {
+        addOrCreateEmojiArray(emoji, reactionsArray, mention);
+        return true;
+    }
+}
+
+function addOrCreateEmojiArray(emoji, reactionsArray, mention) {
+    var reactionIndex = _.findIndex(reactionsArray, (object) => {
+        return object.code == emoji;
+    });
+    
+    if (reactionIndex == -1) {
+        reactionsArray.push({
+            code: emoji,
+            display: "" + emojiData.find_by_short_name(emoji),
+            content: []
+        });
+        reactionIndex = reactionsArray.length-1;
+    }
+    addReplaceOrIgnoreWebMention(reactionsArray[reactionIndex].content, mention);
+}
+
+function getEmojiReaction(mention) {
+    var emojiFound = undefined;
+    var stripContent = mention.data.content.replace(/<\/?[^>]+(>|$)/g, "").replace(/\n/g, "");
+    
+    emojiData.scan(stripContent).forEach(
+        function(ec) {
+            if (stripContent.length < 5) {
+                emojiFound = ec.short_name;
+            }
+        }
+    );
+
+    return emojiFound;
+
+}
 
 function addReplaceOrIgnoreWebMention(current_array, mention) {
     // Find out if item exists in array
