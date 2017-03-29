@@ -33,10 +33,15 @@
     </div>
 
   <footer class="">
-    Syndicated: {% if page.syndication %}
-      {% for syndicated in page.syndication %}
-        {% include syndication.html %}
-      {% endfor %}
+    {% capture syndicationSize %}{{page.syndication | size}}{% endcapture %}
+    {% assign syndicationCount = syndicationSize | plus: 0 %}
+    {% if syndicationCount > 0 %}
+    Syndicated: 
+      {% if page.syndication %}
+        {% for syndicated in page.syndication %}
+          {% include syndication.html %}
+        {% endfor %}
+      {% endif %}
     {% endif %}
   </footer>
 
