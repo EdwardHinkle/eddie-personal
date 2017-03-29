@@ -1,0 +1,32 @@
+<div class="responses">
+
+    <!--<div class="responses-summary">
+        <div class="likes-count">👍 {{likes | size}}</div>
+        <div class="replies-count">Replies: {{replies | size}}</div>
+        <div class="mentions-count">Mentions: {{mentions | size}}</div>
+    </div>-->
+
+    <div class="likes-container">
+        <h2>{{likes | size}} 👍 Likes</h2>
+        {% assign facepile = likes %}
+        {% include responses/face-pile.html %}
+    </div>
+
+    <div class="replies-container">
+        <h2>{{replies | size}} 💬 Replies</h2>
+        {% for reply in replies %}
+            {% assign comment-photo = reply.data.author.photo %}
+            {% assign comment-name = reply.data.author.name %}
+            {% assign comment-published = reply.data.published %}
+            {% assign comment-content = reply.data.content %}
+            {% include responses/comment.html %}
+        {% endfor %}
+    </div>
+
+    <div class="mentions-container">
+        <h2>{{mentions | size}} 🔗 Mentions</h2>
+        {% for mention in mentions %}
+            {% include responses/mention.html %}
+        {% endfor %}
+    </div>
+</div>

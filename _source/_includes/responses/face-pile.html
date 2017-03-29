@@ -1,0 +1,7 @@
+<div class="facepile-container">
+{% for face in facepile %}
+    {% if face.data.author.photo != null %}
+    <img class="face-in-pile" src="{{face.data.author.photo}}">
+    {% endif %}
+{% endfor %}
+</div>
