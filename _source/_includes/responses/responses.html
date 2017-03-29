@@ -6,12 +6,26 @@
         <div class="mentions-count">Mentions: {{mentions | size}}</div>
     </div>-->
 
-    <div class="likes-container">
-        <h2>{{likes | size}} 👍 Likes</h2>
-        {% assign facepile = likes %}
-        {% include responses/face-pile.html %}
+    {% capture reactionSize %}{{reactions | size}}{% endcapture %}
+    {% assign reactionCount = reactionSize | plus: 0 %}
+    {% if reactionCount > 0 %}
+    <div class="reactions-container">
+        <h2>Reactions: 
+            {% for reaction in reactions %}
+                {{reaction.content | size}} {{reaction.display}}
+            {% endfor %}
+        </h2>
+        {% for reaction in reactions %}
+            {% assign facepile = reaction.content %}
+            {% assign overlay = reaction.display %}
+            {% include responses/face-pile.html %}
+        {% endfor %}
     </div>
+    {% endif %}
 
+    {% capture replySize %}{{replies | size}}{% endcapture %}
+    {% assign replyCount = replySize | plus: 0 %}
+    {% if replyCount > 0 %}
     <div class="replies-container">
         <h2>{{replies | size}} 💬 Replies</h2>
         {% for reply in replies %}
@@ -22,11 +36,16 @@
             {% include responses/comment.html %}
         {% endfor %}
     </div>
+    {% endif %}
 
+    {% capture mentionSize %}{{mentions | size}}{% endcapture %}
+    {% assign mentionCount = mentionSize | plus: 0 %}
+    {% if mentionCount > 0 %}
     <div class="mentions-container">
         <h2>{{mentions | size}} 🔗 Mentions</h2>
         {% for mention in mentions %}
             {% include responses/mention.html %}
         {% endfor %}
     </div>
+    {% endif %}
 </div>
