@@ -21,3 +21,9 @@ layout: default
   </footer>
 
 </article>
+
+{% assign likes = site.data.webmentions[page.url].likes %}
+{% assign replies = site.data.webmentions[page.url].replies %}
+{% assign reactions = site.data.webmentions[page.url].reactions %}
+{% assign mentions = site.data.webmentions[page.url].mentions %}
+{% include responses/responses.html %}
