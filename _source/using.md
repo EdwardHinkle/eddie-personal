@@ -40,4 +40,4 @@ page_order: 4
 
 _Updated February 2017_
 
-_Inspired by [this tweet from Matt Hemmell](https://twitter.com/mattgemmell/status/700069800861679616) and [this page by Jason Rodriguez](http://rodriguezcommaj.com/using), this page exists to explain the tools that I use for personal and professional everyday use._
+_Inspired by [this tweet from Matt Gemmell](https://twitter.com/mattgemmell/status/700069800861679616) and [this page by Jason Rodriguez](http://rodriguezcommaj.com/using), this page exists to explain the tools that I use for personal and professional everyday use._
