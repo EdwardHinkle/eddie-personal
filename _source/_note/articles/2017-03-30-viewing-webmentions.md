@@ -13,7 +13,7 @@ syndication:
    image: images/indiewebcamp.svg
    url: https://news.indieweb.org/en
 ---
-For about a week, I've been able to receive [webmentions](https://indieweb.org/webmentions) but they haven't been visible on my site. That is a bad experience for several reasons: The first is that it seems strange for someone to send a webmention and if they visit my site later to see that there's no reference to the feedback they sent me. Second, it's not very enjoyable for me to look at my site and then to have to do some behind the scenes stuff to see if anyone has responded to my posts.
+For about a week, I've been able to [receive webmentions]({{ site.baseurl }}{% link _note/articles/2017-03-23-receiving-webmentions.md %}) but they haven't been visible on my site. That is a bad experience for several reasons: The first is that it seems strange for someone to send a webmention and if they visit my site later to see that there's no reference to the feedback they sent me. Second, it's not very enjoyable for me to look at my site and then to have to do some behind the scenes stuff to see if anyone has responded to my posts.
 
 So that has all changed now! Currently, my site will display if another site mentions one of my posts (basically just linking to my page without direct reference), if someone writes a specific reply post, and if someone likes a post.
 
