@@ -1,6 +1,6 @@
 ---
 layout: post
-featured: true
+featured: false
 title:  "Testing emoji reactions"
 date:   2017-03-29 13:00:00 -0400
 type: article
