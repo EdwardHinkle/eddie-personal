@@ -13,7 +13,7 @@ syndication:
    image: images/indiewebcamp.svg
    url: https://news.indieweb.org/en
 ---
-Well this takes wearable tech to a new level... [uSit by Quilted Northern](https://www.quiltednorthern.com/usit) is designed to "Log every sit" (on the toilet), early daily goals, setting personalized goals and allows you to compete with friends in "Battle Sits".
+Well this takes wearable tech to a new level... [uSit by Quilted Northern](https://www.quiltednorthern.com/usit) is designed to "Log every sit" (on the toilet), earn daily badges, setting personalized goals and allows you to compete with friends in "Battle Sits".
 
 I'm pretty sure that this is an early April Fool's Day joke. I am traditionally a HUGE supporter of wearable tech, however as it becomes more and more mainstream, we will have to ask ourselves the question...how far is too far when it comes to storing our data.
 
