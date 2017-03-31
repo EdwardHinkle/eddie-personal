@@ -10,7 +10,6 @@
   "author": "Edward Hinkle <hello@eddiehinkle.com>",
   "license": "ISC",
   "dependencies": {
-    "@types/md5": "^2.1.31",
     "bluebird": "^3.5.0",
     "emoji-data": "git@github.com:EdwardHinkle/emoji-data-js.git",
     "goodreads": "^0.1.0",
