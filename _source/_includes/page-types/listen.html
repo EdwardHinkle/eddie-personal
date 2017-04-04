@@ -11,16 +11,17 @@
         </span></p>
   </header>
 
-  <div class="basic-card h-entry u-listen-to">
+  <div class="basic-card h-cite u-listen-to">
         {% if page.properties.listen-to.properties.photo %}
             <img class="listen-image u-photo" src="{{page.properties.listen-to.properties.photo}}">
         {% endif %}
         <div class="listen-content">
+            <audio class="u-audio audio-player" src="{{page.properties.listen-to.properties.audio}}" controls="controls"></audio>
             <div class="listen-info p-summary">
                 {% assign listen = page.properties.listen-to.properties %}
                 {% include listen-info.html %}
             </div>
-            <div class="listen-status e-content">
+            <div class="listen-status">
                 {{page.content}}
             </div>
         </div>
