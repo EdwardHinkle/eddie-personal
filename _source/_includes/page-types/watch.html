@@ -18,12 +18,16 @@
         {% if page.movie_name %}
             <img class="show-image" src="{{page.movie_image}}">
         {% endif %}
-        {% if page.video_site_url or page.video_url %}
-            <img class="show-image" src="{{page.video_cover}}">
-        {% endif %}
+        <!--{% if page.properties.watch-of.properties.photo %}
+            <img class="show-image" src="{{page.properties.watch-of.properties.photo}}">
+        {% endif %}-->
         <div class="watch-content">
             <div class="watch-info">
-              {% assign show = page %}
+              {% if page.properties.watch-of %}
+                {% assign watch = page.properties.watch-of.properties %}
+              {% else %}
+                {% assign watch = page %}
+              {% endif %}
               {% include watch-info.html %}
             </div>
             <div class="watch-status">

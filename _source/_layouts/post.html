@@ -16,7 +16,7 @@ layout: default
                 {% if page.properties.listen-to %}
                     {% include page-types/listen.html %}
                 {% else %}
-                    {% if page.show_name or page.movie_name or page.video_url or page.video_site_url %} <!-- Watch -->
+                    {% if page.show_name or page.movie_name or page.properties.watch-of %} <!-- Watch -->
                         {% include page-types/watch.html %}
                     {% else %}
                         {% if page.isbn %}
